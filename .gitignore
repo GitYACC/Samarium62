@@ -1,0 +1,7 @@
+*.png
+*.jpg
+*.jpeg
+env/
+ideas
+configs.json
+run.dev.py
