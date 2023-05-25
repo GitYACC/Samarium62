@@ -4,4 +4,4 @@
 env/
 ideas
 configs.json
-run.dev.py
+run.*.py

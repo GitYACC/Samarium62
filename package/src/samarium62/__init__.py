@@ -11,3 +11,4 @@ configs = {
 json.dump(configs, open("configs.json", "w"))
 
 from .discord import *
+from .ext import *

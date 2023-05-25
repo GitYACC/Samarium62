@@ -11,3 +11,5 @@ src/samarium62/discord/__init__.py
 src/samarium62/discord/component.py
 src/samarium62/discord/embed.py
 src/samarium62/discord/image_processing.py
+src/samarium62/ext/__init__.py
+src/samarium62/ext/checks.py
