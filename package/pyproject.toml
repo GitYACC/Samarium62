@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "samarium62"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
   { name="GitYACC", email="shastrysamarth@gmail.com" },
 ]
