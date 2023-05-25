@@ -1,12 +1,10 @@
 from dataclasses import dataclass
 from enum import Enum
-import hikari
-import lightbulb
 from typing import Any, Tuple, TextIO, List
 from PIL import Image, ImageFont, ImageDraw, ImageFilter
 from .component import BaseComponent, ComponentType
 from .image_processing import ImageProcessing
-from html2image import Html2Image
+#from html2image import Html2Image
 import typing
 import json
 
@@ -172,6 +170,7 @@ class BaseEmbed:
             self._panel_rounded(render, dim=im.size, fill=command.bgcolor, radius=command.bradius)
             self.root.paste(im, pos)
         elif command.type == ComponentType.HTML:
+            raise Exception("undeveloped component type <ComponentType.HTML>")
             hti = Html2Image(custom_flags=["--disable-gpu"])
             if command.url:
                 hti.screenshot(url=command.url)
