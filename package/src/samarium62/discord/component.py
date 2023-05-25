@@ -125,7 +125,8 @@ class BaseComponent:
     @property
     def center(self):
         if self.type == ComponentType.TEXT:
-            bbox = self.font.getbbox(self.text)
+            font = ImageFont.truetype(component.font, component.fsize)
+            bbox = font.getbbox(self.text)
             return (bbox[2] - bbox[0], bbox[3] - bbox[1])
         elif self.type == ComponentType.IMAGE:
             bbox = ImageProcessing.ratio(
